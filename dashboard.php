@@ -39,7 +39,7 @@ $derniers_messages = $conn->query("SELECT * FROM messages ORDER BY id DESC LIMIT
         /* SIDEBAR */
         .sidebar {
             width: 260px;
-            background: #1a1008;
+            background: #694e39;
             min-height: 100vh;
             padding: 32px 0;
             position: fixed;
@@ -270,7 +270,7 @@ $derniers_messages = $conn->query("SELECT * FROM messages ORDER BY id DESC LIMIT
 <!-- SIDEBAR -->
 <aside class="sidebar">
     <div class="sidebar-logo">
-        <span>✈️</span>
+         <img src="pictures/logo.png" alt="Logo" style="width:140px;height:140px;object-fit:contain;">
         <h2>Drink & Fly</h2>
         <p>Administration</p>
     </div>

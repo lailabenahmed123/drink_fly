@@ -33,7 +33,7 @@ body{
 /* SIDEBAR (même style commandes) */
 .sidebar{
     width:260px;
-    background:#1a1008;
+    background:#694e39;
     min-height:100vh;
     padding:32px 0;
     position:fixed;
@@ -211,7 +211,7 @@ tr:hover td{
 <!-- SIDEBAR -->
 <aside class="sidebar">
     <div class="sidebar-logo">
-        <span>✈️</span>
+        <img src="../pictures/logo.png" alt="Logo" style="width:160px;height:160px;object-fit:contain;">
         <h2>Drink & Fly</h2>
         <p>Administration</p>
     </div>

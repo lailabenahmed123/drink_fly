@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include("config.php");
 
 $produits = $conn->query("SELECT * FROM produits");
@@ -45,6 +47,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <li><a href="home.php" class="nav-link">Accueil</a></li>
                 <li><a href="menu.php" class="nav-link">Menu</a></li>
                 <li><a href="contact.php" class="nav-link">Contact</a></li>
+<?php if(isset($_SESSION['client'])): ?>
+        <li><a href="logout.php">👋 <?= $_SESSION['client'] ?> | Déconnexion</a></li>
+    <?php else: ?>
+        <li><a href="login.php">Connexion</a></li>
+    <?php endif; ?>
+
             </ul>
         </nav>
     </header>
